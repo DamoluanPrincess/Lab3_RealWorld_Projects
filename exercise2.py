@@ -2,12 +2,10 @@ LAST_NAME = "DAMOLUAN"
 SEED_NUM = 8
 FAVORITE_ARTIST = "ILUNA"
 
-
 def generate_fault_code(last_name, seed_num, favorite_artist):
     """Generate a deterministic fault code based on student data."""
     value = sum(ord(char) for char in last_name + favorite_artist) + seed_num
     return (value % 97) + 33
-
 
 def trace_fault(code, trace=None, count=None):
     """Recursively trace the fault until it reaches the base condition."""

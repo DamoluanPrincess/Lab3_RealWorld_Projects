@@ -6,7 +6,6 @@ LAST_NAME = "DAMOLUAN"
 SEED_NUM = 8
 FAVORITE_ARTIST = "ILUNA"
 
-
 def diagnostic_decorator(func):
     """Decorator to log and record the execution process."""
     @functools.wraps(func)
